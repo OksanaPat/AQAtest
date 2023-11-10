@@ -14,7 +14,7 @@ class Test_Passenger:
         self.destination = "Station A"
         assert self.destination == "Station A"
 
-    @pytest.mark.smoke
+    @pytest.mark.negative
     def test_passenger_destination_false(self):
         self.destination = "Station A"
         assert self.destination == "Station C"
